@@ -16,9 +16,20 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo"></div>
+  <div id="mySidenav" class="sidenav">
+    <a id="close" class="closebtn"><img src="./assets/images/icon-menu-close.svg" alt=""></a>
+    <a href="#">Home</a>
+    <a href="#">New</a>
+    <a href="#">Popular</a>
+    <a href="#">Trending</a>
+    <a href="#">Categories</a>
+  </div>
+  <header class="spacing">
+    <div class="logo">
+      <img src="./assets/images/logo.svg" alt="">
+    </div>
     <div class="navigation">
+      <span class="mobile"> <img src="./assets/images/icon-menu.svg" alt=""></span>
       <ul>
         <li>Home</li>
         <li>New</li>
@@ -32,39 +43,44 @@
   <main class="container">
     <div class="main-main">
       <div class="img-banner">
-        <img src="./assets/images/image-web-3-desktop.jpg" alt="">
+        <picture>
+          <source media="(max-width: 425px)" srcset="./assets/images/image-web-3-mobile.jpg">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="banner image">
+        </picture>
+        
         <div class="banner-text-container">
           <div><h1>The Bright Future of Web 3.0?</h1></div>
-          <div>
+          <div class="relative">
             <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
             But is it really fulfilling its promise?
             </p>
-            <button>Read more</button>
+            <br>
+            <button> <p>READ MORE</p> </button>
           </div>
   
         </div>
       </div>
       <aside class="sidebar">
       <div>
-        <b>New </b>
+        <b class="text-yellow text-md">New </b>
       </div>
       <div>
         <p>
-          <b> Hydrogen VS Electric Cars</b><br>
+          <b> Hydrogen VS Electric Cars</b><br><br>
           Will hydrogen-fueled cars ever catch up to EVs?
           </p>
       </div>
-  
+  <hr>
       <div>
         <p>
-          <b>The Downsides of AI Artistry</b><br>
+          <b>The Downsides of AI Artistry</b><br><br>
           What are the possible adverse effects of on-demand AI image generation?
         </p>
       </div>
-  
+  <hr>
       <div>
         <p>
-          <b>Is VC Funding Drying Up?</b> <br>
+          <b>Is VC Funding Drying Up?</b> <br><br>
           Private funding by VC firms is down 50% YOY. We take a look at what that means.
         </p>
       </div>
@@ -74,25 +90,39 @@
     <div class="articles">
 
       <div class="article">
-        <div class="article-image"></div>
-        <div class="article-content"> 01
-          Reviving Retro PCs
-          What happens when old PCs are given modern upgrades?</div>
+        <div class="article-image">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="">
+        </div>
+        <div class="article-content"> 
+          <p> <span class="numbers">01</span>  <br>
+          <span class="article-header">Reviving Retro PCs</span> <br>
+          
+          What happens when old PCs are given modern upgrades?
+        </p></div>
       </div>
 
       <div class="article">
-        <div class="article-image"></div>
-        <div class="article-content"> 02
-          Top 10 Laptops of 2022
-          Our best picks for various needs and budgets.</div>
+        <div class="article-image">
+          <img src="./assets/images/image-top-laptops.jpg" alt="">
+        </div>
+        <div class="article-content"> 
+          <p> <span class="numbers">02</span> <br>
+            <span class="article-header">Top 10 Laptops of 2022</span> <br>
+          
+          Our best picks for various needs and budgets.
+        </p></div>
       </div>
 
       <div class="article">
-        <div class="article-image"></div>
+        <div class="article-image">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="">
+        </div>
         <div class="article-content">
-          03
-          The Growth of Gaming
-          How the pandemic has sparked fresh opportunities.</div>
+          <p> <span class="numbers">03</span> <br>
+            <span class="article-header">The Growth of Gaming</span> <br>
+            How the pandemic has sparked fresh opportunities.
+          </p>
+          </div>
       </div>
 
     </div>
@@ -102,10 +132,10 @@
   <footer>
     <div class="attribution">
       <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://github.com/morzo-ralph">Your Name Here</a>.</p>
+      Coded by <a href="https://github.com/morzo-ralph">ral_3.14</a>.</p>
     </div>
 
   </footer>
-  
+  <script src="./js/app.js"></script>
 </body>
 </html>
